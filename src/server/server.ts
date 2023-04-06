@@ -1,7 +1,12 @@
 import express from 'express'
+import os from 'os'
+
+import config from './config'
+console.log('config', config)
 
 const server = express()
-const port = 8080
+const port = config.PORT
+const host = config.HOST
 
 server.use(express.static("dist"))
 
@@ -13,6 +18,8 @@ server.use("/", (req,res)=> {
     });
 })
 
-server.listen(port,"0.0.0.0",()=>{
-    console.info(`Port listing on port ${port}`)
+
+server.listen(port,host,()=>{
+    console.info(`Port listing on port ${port}`),
+    console.info(`Free Memory in GB ${ os.freemem() / 1024 / 1024 / 1024 }`)
 })
