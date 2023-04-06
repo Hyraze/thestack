@@ -19,7 +19,6 @@ export const connectClient = async () => {
 
 }
 
-
 export const stopClient = async () => {
     await connectedClient?.close();
 };
