@@ -6,7 +6,7 @@ const App = ({ initialData }) => {
   return (
     <div className="container">
       <Header message="Book Show" />
-      <BookList books={initialData.books} />
+      <BookList initialBooks={initialData.books} />
     </div>
   );
 };

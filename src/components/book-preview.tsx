@@ -1,4 +1,5 @@
-const BookPreview = ({ book }) => {
+import * as React from "react"
+const BookPreview: React.FC<{ book: object}> = ({ book }) => {
   return (
     <div className="book-preview">
       <div className="category">{book.title}</div>
