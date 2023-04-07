@@ -5,5 +5,5 @@ const container = document.getElementById("app");
 const root = createRoot(container);
 
 root.render(
-    <App initialData={{ books: [] }} />,
+    <App initialData={(window as any).initialData} />
   );

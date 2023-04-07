@@ -6,9 +6,10 @@ const BookList = ({ initialBooks }) => {
   const [books, setBooks] = useState(initialBooks);
 
   useEffect(() => {
-    fetchBooks().then((data) => {
-      setBooks(data.books);
-    });
+    // TODO: not when server_side rendering
+    // fetchBooks().then((books) => {
+    //   setBooks(books);
+    // });
   }, []);
 
   return (
