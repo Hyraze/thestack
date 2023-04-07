@@ -1,11 +1,14 @@
+import BookList from "./book-list";
 import Header from "./header";
 
-const App = () => {
-    return(
+const App = ({ initialData }) => {
+  console.log("initialData", initialData);
+  return (
     <div className="container">
-        <Header message="Books Show" />
+      <Header message="Book Show" />
+      <BookList books={initialData.books} />
     </div>
-    );
+  );
 };
 
-export default App
+export default App;

@@ -24,12 +24,12 @@ body {
   color: #0000ee;
 }
 
-.contest-preview {
+.book-preview {
   margin: 1rem;
   border: thin solid #ccc;
 }
 
-.contest-preview .category {
+.book-preview .category {
   border-bottom: thin solid #ccc;
   padding: 0.5rem;
   font-weight: bold;
@@ -37,7 +37,15 @@ body {
   background-color: #eee;
 }
 
-.contest-preview .contest {
+.book-preview .author {
+  border-bottom: thin solid #ccc;
+  padding: 0.5rem;
+  font-weight:lighter;
+  color: #333;
+  background-color: #eee;
+}
+
+.book-preview .contest {
   color: #333;
   padding: 0.5rem;
 }
